@@ -1,23 +1,110 @@
 @font-face {
     font-family: ProtoMonoRegular;
     src: url("Proto.Mono/Proto Mono Regular.ttf");
-}
+    }
 
 @font-face {
     font-family: ProtoMonoBold;
     src: url("Proto.Mono/Proto Mono Semi Bold.ttf");
 }
-
+:root {
+    --lightblue: #00FFEF;
+    --grabberblue: #2b6be4;
+    --nikeblue: #006afe;
+}
 body {
     background-color: black;
     font-family: ProtoMonoRegular;
-}
-h1 {
-    color: #00FFEF;
-    color: red;
-    font-size: 67px;
-}
-.logo {
     color: white;
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+.box {
+    flex-grow: 1;
+}
+
+.logo {
+    background-color: pink;
+    background-color: black;
+}
+.logo h1 {
+    font-size: 65px;
     font-family: ProtoMonoBold;
+}
+
+.content {
+    background-color: yellow;
+    background-color: black;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+.content h1 {
+    padding-top: 40px;
+    font-size: 25px;
+    font-family: ProtoMonoBold;
+    text-decoration: underline;
+    text-align: left;
+}
+.content p {
+    font-size: 16px;
+}
+.flex-container2 {
+    display: flex;
+}
+.left {
+    background-color: green;
+    background-color: black;
+    text-align: right;
+}
+.right {
+    background-color: orange;
+    background-color: black;
+}
+.left img {
+    width: 50px;
+}
+.logos {
+    display: flex;
+    flex-direction: column;
+    background-color: pink;
+    background-color: black;
+    align-items: flex-end;
+    line-height: 0;
+}
+.links {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding-left: 15px;
+}
+a, a:visited, a:active {
+    text-decoration: none;
+    font-family: ProtoMonoRegular;
+    color: white;
+    font-size: 16px;
+}
+
+        /*iPad Mini viewport*/
+@media screen and (max-width: 1100px) {
+    .content {
+    padding-left: 20%;
+    padding-right: 20%;
+    }
+}
+
+/*xd*/
+@media screen and (max-width: 768px) {
+    .content {
+    padding-left: 15%;
+    padding-right: 15%;
+    }
+}
+
+/*iPhone 12 Pro Max viewport*/
+@media screen and (max-width: 535px) {
+    .content h1 {
+        text-align: center;
+    }
 }
